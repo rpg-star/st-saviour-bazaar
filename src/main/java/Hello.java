@@ -24,7 +24,7 @@ public class Hello{
         String[][] rug = new String [width][height];
         for (int i = 0; i < rug.length; i++){
             for(int j = 0; j < rug[i].length; j++){
-                rug[i][j] = "6";
+                rug[i][j] = "☆";
             }
         }
         return rug;
@@ -36,9 +36,9 @@ public class Hello{
         for (int i = 0; i < rug.length; i++){
             for (int j = 0; j < rug[i].length; j++){
                 if (i % 2 != 0){
-                    rug[i][j] = "6";
+                    rug[i][j] = "☆";
                 } else{
-                    rug[i][j] = "7";
+                    rug[i][j] = "⏾";
                 }
             }
         }
@@ -51,9 +51,9 @@ public class Hello{
         for (int i = 0; i < rug.length; i++){
             for(int j = 0; j < rug[i].length; j++){
                 if (j % 2 != 0){
-                    rug[i][j] = "7";
+                    rug[i][j] = "⏾";
                 } else {
-                    rug[i][j] = "6";
+                    rug[i][j] = "☆";
                 }
             }
         }
@@ -66,14 +66,14 @@ public class Hello{
         for (int i = 0; i < rug.length; i++){
             for (int j = 0; j < rug[i].length; j++){
                 if(i % 2 == 0 && j % 2 != 0){
-                    rug [i][j] = "7";
+                    rug [i][j] = "⏾";
                 } else if (i % 2 == 0 && j % 2 == 0){
-                    rug [i][j] = "6";
+                    rug [i][j] = "☆";
                 }
                 if(i % 2 != 0 && j % 2 == 0){
-                    rug [i][j] = "7";
+                    rug [i][j] = "⏾";
                 } else if (i % 2 != 0 && j % 2 != 0){
-                    rug[i][j] = "6";
+                    rug[i][j] = "☆";
                 }
             }
         }
@@ -86,9 +86,9 @@ public class Hello{
         for (int i = 0; i < rug.length; i++){
             for (int j = 0; j < rug[i].length; j++){
                 if (i % 2 == 0 && j % 2 != 0){
-                    rug [i][j] = "7";
+                    rug [i][j] = "⏾";
                 } else {
-                    rug [i][j] = "6";
+                    rug [i][j] = "☆";
                 }
 
             }
