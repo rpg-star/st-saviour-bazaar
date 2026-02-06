@@ -103,26 +103,22 @@ public class Hello{
             for (int j = 0; j < rug[i].length; j++){
                 if(i == j || j == rug.length - 1 - i){
                    rug [i][j] = "⏾ ";
-                } else if(j % (int) (rug.length / 2) == 0 && i % (int) (rug.length / 2) == 0){
-                    rug [i][j] = "⏾ ";
-                }
+                } 
                 else {
                     rug[i][j] = "☆ ";
                 }
-                //when its half the length, the apex forms
-                //then it  incrememnts by 2 until it reaches the halfway point of i
-                //after it reaches the halfway point of i, it decreases
-                // length/2 - 2 and length /2 +2\
-                //i = 
+                if((int) (rug.length / 2) - i == j){
+                        rug[i][j] = "⏾ ";
+                    } else if((int) (rug.length / 2) + i == j){
+                        rug[i][j] = "⏾ ";
+                    } else if (i - (int) (rug.length / 2) == j){
+                        rug[i][j] = "⏾ ";
+                    } else if (i >= (int) (rug.length / 2) && j == rug.length - 1 + (int)(rug.length / 2)  - i){
+                        rug[i][j] = "⏾ ";
+                    }
             }
         }
-        // for (int j = rug.length; j > 0; j--){
-        //     for (int i = rug[j].length; i > 0; i-- ){
-        //         if (i == j){
-        //             rug[i][j] = "⏾ ";
-        //         }
-        //     }
-        // }
+
         return rug;
     }
 
