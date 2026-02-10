@@ -24,7 +24,7 @@ public class Hello{
         String[][] rug = new String [width][height];
         for (int i = 0; i < rug.length; i++){
             for(int j = 0; j < rug[i].length; j++){
-                rug[i][j] = "☆";
+                rug[i][j] = " ☆ ";
             } //at every position, a star emoji is printed
         }
         return rug;
@@ -36,9 +36,9 @@ public class Hello{
         for (int i = 0; i < rug.length; i++){
             for (int j = 0; j < rug[i].length; j++){
                 if (i % 2 != 0){
-                    rug[i][j] = "☆ ";
+                    rug[i][j] = " ☆ ";
                 } else{
-                    rug[i][j] = "⏾ ";
+                    rug[i][j] = " ⏾ ";
                 }
             } //emojis alternate by row
         }
@@ -51,9 +51,9 @@ public class Hello{
         for (int i = 0; i < rug.length; i++){
             for(int j = 0; j < rug[i].length; j++){
                 if (j % 2 != 0){
-                    rug[i][j] = "⏾ ";
+                    rug[i][j] = " ⏾ ";
                 } else {
-                    rug[i][j] = "☆ ";
+                    rug[i][j] = " ☆ ";
                 }
             }//emojis alternate by column
         }
@@ -66,14 +66,14 @@ public class Hello{
         for (int i = 0; i < rug.length; i++){
             for (int j = 0; j < rug[i].length; j++){
                 if(i % 2 == 0 && j % 2 != 0){
-                    rug [i][j] = "⏾ ";
+                    rug [i][j] = " ⏾ ";
                 } else if (i % 2 == 0 && j % 2 == 0){
-                    rug [i][j] = "☆ ";
+                    rug [i][j] = " ☆ ";
                 } //emojis alternate within each row
                 if(i % 2 != 0 && j % 2 == 0){
-                    rug [i][j] = "⏾ ";
+                    rug [i][j] = " ⏾ ";
                 } else if (i % 2 != 0 && j % 2 != 0){
-                    rug[i][j] = "☆ ";
+                    rug[i][j] = " ☆ ";
                 } //emojis alternate within each column
             }
         }
@@ -86,10 +86,10 @@ public class Hello{
         for (int i = 0; i < rug.length; i++){
             for (int j = 0; j < rug[i].length; j++){
                 if (i % 2 == 0 && j % 2 != 0){
-                    rug [i][j] = "⏾ ";
+                    rug [i][j] = " ⏾ ";
                     //when the row number is even and the column number is odd, make the array at that position equal to the moon emoji
                 } else {
-                    rug [i][j] = "☆ ";
+                    rug [i][j] = " ☆ ";
                 }
             }
         }
@@ -102,19 +102,19 @@ public class Hello{
         for (int i = 0; i < rug.length; i++){
             for (int j = 0; j < rug[i].length; j++){
                 if(i == j || j == rug.length - 1 - i){
-                   rug [i][j] = "⏾ ";
+                   rug [i][j] = " ⏾ ";
                 } //this if stateement creates the x that is behind the diamond
                 else {
-                    rug[i][j] = "☆ ";
+                    rug[i][j] = " ☆ ";
                 }
                 if((int) (rug.length / 2) - i == j){
-                        rug[i][j] = "⏾ ";
+                        rug[i][j] = " ⏾ ";
                     } else if((int) (rug.length / 2) + i == j){
-                        rug[i][j] = "⏾ ";
+                        rug[i][j] = " ⏾ ";
                     } else if (i - (int) (rug.length / 2) == j){
-                        rug[i][j] = "⏾ ";
+                        rug[i][j] = " ⏾ ";
                     } else if (i >= (int) (rug.length / 2) && j == rug.length - 1 + (int)(rug.length / 2)  - i){
-                        rug[i][j] = "⏾ ";
+                        rug[i][j] = " ⏾ ";
                     } //these if/else if statements create the diagonal lines that make up the diamond
             }
         }
