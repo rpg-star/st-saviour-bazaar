@@ -4,7 +4,7 @@ public class Hello{
 
     public static void main(String[] args){
         System.out.println("see you on the flipside");
-        weave(diagonal(11, 11));
+        weave(plaid(11, 11));
     }
 
     
@@ -85,7 +85,7 @@ public class Hello{
         String [][] rug = new String [width][height];
         for (int i = 0; i < rug.length; i++){
             for (int j = 0; j < rug[i].length; j++){
-                if (i % 2 == 0 && j % 2 != 0){
+                if (i % 2 == 0 && j % 2 == 0){
                     rug [i][j] = " ⏾ ";
                     //when the row number is even and the column number is odd, make the array at that position equal to the moon emoji
                 } else {
